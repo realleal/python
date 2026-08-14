@@ -3,76 +3,84 @@
 # -------------------------
 
 print("--- Operações Aritméticas ---")
-a = 10
-b = 3
 
-soma = a + b          # Soma
-subtracao = a - b     # Subtração
-multiplicacao = a * b # Multiplicação
-divisao = a / b       # Divisão (sempre retorna um número com ponto flutuante, ex: float)
-divisao_inteira = a // b # Divisão inteira (descarta a parte decimal)
-resto = a % b         # Resto da divisão (módulo)
-potencia = a ** b     # Potência (a elevado a b)
+valor_a = 25
+valor_b = 4
 
-print(f"{a} + {b} = {soma}")
-print(f"{a} - {b} = {subtracao}")
-print(f"{a} * {b} = {multiplicacao}")
-print(f"{a} / {b} = {divisao}")
-print(f"{a} // {b} = {divisao_inteira}")
-print(f"{a} % {b} = {resto}")
-print(f"{a} ** {b} = {potencia}")
+soma_resultado = valor_a + valor_b
+sub_resultado = valor_a - valor_b
+multi_resultado = valor_a * valor_b
+div_resultado = valor_a / valor_b
+div_inteira_resultado = valor_a // valor_b
+resto_resultado = valor_a % valor_b
+potencia_resultado = valor_a ** valor_b
+
+print(f"{valor_a} + {valor_b} = {soma_resultado}")
+print(f"{valor_a} - {valor_b} = {sub_resultado}")
+print(f"{valor_a} * {valor_b} = {multi_resultado}")
+print(f"{valor_a} / {valor_b} = {div_resultado}")
+print(f"{valor_a} // {valor_b} = {div_inteira_resultado}")
+print(f"{valor_a} % {valor_b} = {resto_resultado}")
+print(f"{valor_a} ** {valor_b} = {potencia_resultado}")
+
 print("-" * 20)
 
 
 # -------------------------
-# 2. Operações com Strings (Textos)
+# 2. Operações com Strings
 # -------------------------
+
 print("--- Operações com Strings ---")
-primeiro_nome = "João"
-segundo_nome = "Silva"
 
-# Concatenação (+)
-nome_completo = primeiro_nome + " " + segundo_nome
-print(f"Nome completo: {nome_completo}")
+nome_usuario = "Lucas"
+sobrenome_usuario = "Costa"
 
-# Repetição (*)
-risada = "ha" * 5
-print(f"Risada: {risada}")
+nome_completo_usuario = nome_usuario + " " + sobrenome_usuario
+
+print(f"Nome completo: {nome_completo_usuario}")
+
+palavra = "Olá "
+mensagem_repetida = palavra * 3
+
+print(f"Mensagem: {mensagem_repetida}")
+
 print("-" * 20)
 
 
 # -------------------------
 # 3. Operações de Comparação
 # -------------------------
-print("--- Operações de Comparação ---")
-x = 15
-y = 20
 
-print(f"x ({x}) é igual a y ({y})? {x == y}")
-print(f"x ({x}) é diferente de y ({y})? {x != y}")
-print(f"x ({x}) é maior que y ({y})? {x > y}")
-print(f"x ({x}) é menor que y ({y})? {x < y}")
-print(f"x ({x}) é maior ou igual a y ({y})? {x >= y}")
-print(f"x ({x}) é menor ou igual a y ({y})? {x <= y}")
+print("--- Operações de Comparação ---")
+
+idade_pessoa = 18
+idade_minima = 21
+
+print(f"As idades são iguais? {idade_pessoa == idade_minima}")
+print(f"As idades são diferentes? {idade_pessoa != idade_minima}")
+print(f"A primeira idade é maior? {idade_pessoa > idade_minima}")
+print(f"A primeira idade é menor? {idade_pessoa < idade_minima}")
+print(f"A primeira idade é maior ou igual? {idade_pessoa >= idade_minima}")
+print(f"A primeira idade é menor ou igual? {idade_pessoa <= idade_minima}")
+
 print("-" * 20)
 
 
 # -------------------------
 # 4. Operações Lógicas
 # -------------------------
+
 print("--- Operações Lógicas ---")
-tem_dinheiro = True
-tem_tempo = False
 
-# 'and' (E): só é verdadeiro se AMBAS as condições forem verdadeiras.
-pode_viajar = tem_dinheiro and tem_tempo
-print(f"Pode viajar (dinheiro E tempo)? {pode_viajar}")
+tem_passagem = True
+documento_pronto = True
 
-# 'or' (OU): é verdadeiro se PELO MENOS UMA das condições for verdadeira.
-pode_ir_ao_parque = tem_dinheiro or tem_tempo
-print(f"Pode ir ao parque (dinheiro OU tempo)? {pode_ir_ao_parque}")
+pode_embarcar = tem_passagem and documento_pronto
+pode_entrar = tem_passagem or documento_pronto
+documento_pendente = not documento_pronto
 
-# 'not' (NÃO): inverte o valor booleano.
-nao_tem_dinheiro = not tem_dinheiro
-print(f"Não tem dinheiro? {nao_tem_dinheiro}")
+print(f"Pode embarcar? {pode_embarcar}")
+print(f"Pode entrar? {pode_entrar}")
+print(f"Documento está pendente? {documento_pendente}")
+
 print("-" * 20)
